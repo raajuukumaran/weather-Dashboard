@@ -1,16 +1,17 @@
 /* App.css */
-.App {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
-  background: #f0f4f8;
-  min-height: 100vh;
-  color: #333;
+.weather-form-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
+
 
 h1 {
   color: #007bff;
   margin-bottom: 20px;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+
 }
 
 .weather-form {
@@ -21,31 +22,8 @@ h1 {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.weather-input {
-  margin-bottom: 15px;
-  padding: 10px;
-  width: 250px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.date-picker-container {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 15px;
-}
-
-.date-picker {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 16px;
-  width: 200px;
+  max-width: 600px; /* Adjust the maximum width of the form */
+  width: 100%; /* Ensure the form takes full width up to max-width */
 }
 
 .weather-button {
@@ -56,6 +34,7 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  margin-top: 10px;
 }
 
 .weather-button:hover {
@@ -68,7 +47,7 @@ h1 {
 }
 
 .weather-card {
-  background: #fff;
+  background: #d7b4b4;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -87,4 +66,13 @@ h1 {
 .chart-container {
   margin: 20px auto;
   max-width: 800px;
+}
+
+/* MUI Autocomplete styles */
+.MuiAutocomplete-root {
+  width: 100%; /* Ensure autocomplete takes full width of its container */
+}
+
+.MuiTextField-root {
+  width: 100%; /* Ensure text field takes full width of its container */
 }
